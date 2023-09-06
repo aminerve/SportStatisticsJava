@@ -20,12 +20,14 @@ public class SportStatistics {
         } catch (Exception e) {
             System.out.println("Error: " + e);
         }
+        int gp = 0;
         System.out.println("Team:");
         String team = scan.nextLine();
         for (String stat : stats) {
             if (stat.contains(team)) {
-                System.out.println(stat);
+                gp++;
             }
         }
+        System.out.println("Games: " + gp);
     }
 }
